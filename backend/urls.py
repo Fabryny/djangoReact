@@ -24,7 +24,7 @@ from core.views import ListViewSet, ItemViewSet
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
-router.register(r'Lista', ListViewSet)
+router.register(r'Lista', ListViewSet, basename="list")
 router.register(r'Item', ItemViewSet)
 
 # Wire up our API using automatic URL routing.
